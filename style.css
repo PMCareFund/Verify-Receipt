@@ -1,0 +1,210 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* INdia logo section */
+#india-logo-section img{
+    height: 28px;
+    width: 35px;
+}
+#india-logo-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    height: 38px;
+    background-color: rgb(225, 233, 238);
+}
+#india-logo-section div{
+    padding-left: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#india-logo-section ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-right: 130px;
+}
+#india-logo-section ul li{
+    list-style: none;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#india-logo-section ul span{
+    background-color: aliceblue;
+    height: 38px;
+    width: 1px;
+}
+
+/* Header */
+header{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header a img{
+    cursor: pointer;
+    height: 90px;
+    width: 400px;
+    padding-left: 100px;
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding-right: 120px;
+}
+header ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+/* main section  */
+#main{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 60px;
+}
+#main h1{
+    font-size: 30px;
+}
+table{
+    width: 75vw;
+    border-collapse: collapse;
+    border: 1px solid grey;
+    border-radius: 5px
+}
+table td{
+    padding: 15px;
+    text-align: left;
+    border: 1px solid grey;
+}
+table th{
+    width: 22vw;
+    padding: 9px;
+    text-align: left;
+    border: 1px solid grey;
+}
+/* footer */
+footer{
+    background-color: #2c2a2a;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 20vh;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    font-size: 12.5px;
+}
+footer p{
+    font-size: 12px;
+}
+.line{
+    background-color: white;
+    height: 11vh;
+    width: 1px;
+}
+footer ul li a:hover{
+    text-decoration: underline;
+}
+.icon{
+    display: none;
+}
+@media screen and ((min-width: 360px) and (max-width: 740px)){
+    #india-logo-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;    
+        gap: 120px;
+        padding: 5px; 
+    }
+    #india-logo-section ul li{
+        font-size: 9px;
+    }
+    #india-logo-section img{
+        height: 18px;
+        width: 25px;
+    }
+    header{
+        height: 60px;
+    }
+    header a img{
+        width: 120px;
+        height: 40px;
+        padding-left: 0px;
+    }
+    header ul{
+        display: none;
+    }
+    #main h1{
+        font-size: 20px;
+    }
+    table{
+        width: 380px;
+    }
+    table td{
+        font-size: 10px;
+        padding: 7px;
+    }
+    table th{
+        font-size: 10px;
+        padding: 7px;
+    }
+    #main{
+        padding-bottom: 30px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 17px;
+        height: 220px;
+        padding: 15px;
+    }
+    .line{
+        width: 380px;
+        background-color: aliceblue;
+        height: 1px;
+    }
+    footer ul:nth-child(3){
+        display: none;
+    }
+    .icon{
+        display: inline;
+        position: relative;
+    }
+}
